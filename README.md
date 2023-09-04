@@ -6,7 +6,7 @@ export OPENFOAM_VN=v2306
 ### Unloads cray module
 module unload PrgEnv-cray    
 
-# Loads gnu module
+### Loads gnu module
 module load PrgEnv-gnu      
 
 # cd to correct installation location    
