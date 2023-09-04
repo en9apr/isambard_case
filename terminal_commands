@@ -4,6 +4,8 @@
 
 # Just copy and paste into the terminal each of the non-comment lines (comment line is #)
 
+# <Enter> is the return key on the keyboard not the phrase "<Enter>"
+
 # Creates local variable
 export OPENFOAM_VN=v2306
 
@@ -28,7 +30,7 @@ tar -zxvf ThirdParty-$OPENFOAM_VN.tgz
                                                    
 cd OpenFOAM-$OPENFOAM_VN/                                                                
 
-# This creates a new file pref.sh
+# This creates a new file pref.sh (multi-line input)
 cat > ./etc/prefs.sh << EOF                  
 export WM_COMPILER_TYPE=system
 export WM_COMPILER=Gcc
@@ -53,8 +55,15 @@ foamSystemCheck
 # Check locations
 foamInstallationTest
 
+# Open .bashrc
+vi $HOME/.bashrc
+
 # Put this is in $HOME/.bashrc (activate with of2306 if running from terminal):
 alias of2306='module unload PrgEnv-cray; module load PrgEnv-gnu; export OPENFOAM_DIR=$HOME/OpenFOAM/OpenFOAM-v2306; export PATH=$PATH:$OPENFOAM_DIR/bin/; source $OPENFOAM_DIR/etc/bashrc; export PS1="(LOCAL OF:\$WM_PROJECT_VERSION) $PS1"'
+
+# Write and quit .bashrc
+:w <Enter>
+:q! <Enter>
 
 # Reload the .bashrc or logout and login again
 source $HOME/.bashrc
@@ -70,8 +79,15 @@ run
 git clone https://github.com/en9apr/isambard_case
 cd isambard_case
 
+# Open isambard.sh
+vi isambard.sh
+
 # Adjust isambard.sh for your own username
 OPENFOAM_DIR=/home/ex-aroberts/OpenFOAM/OpenFOAM-v2306
+
+# Write and quit isambard.sh
+:w <Enter>
+:q! <Enter>
 
 # Submit to queue
 qsub isambard.sh
