@@ -1,9 +1,9 @@
 # Enter the non-commented commands into the terminal:
 
-# Creates local variable
+## Creates local variable
 export OPENFOAM_VN=v2306
 
-# Unloads cray module
+## Unloads cray module
 module unload PrgEnv-cray    
 
 # Loads gnu module
