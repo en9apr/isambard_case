@@ -55,7 +55,7 @@ foamSystemCheck
 # Check locations
 foamInstallationTest
 
-# Open .bashrc
+# Open $HOME/.bashrc
 vi $HOME/.bashrc
 
 # Put this is in $HOME/.bashrc (activate with of2306 if running from terminal):
