@@ -4,7 +4,7 @@
 
 # Just copy and paste into the terminal each of the non-comment lines (comment line is #)
 
-# <Enter> is the return key on the keyboard not the phrase "<Enter>"
+# <Enter> is the return key on the keyboard not the phrase "<Enter>" (same for <Escape>)
 
 # Creates local variable
 export OPENFOAM_VN=v2306
