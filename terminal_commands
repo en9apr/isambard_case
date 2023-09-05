@@ -64,7 +64,8 @@ i
 # Put this is in $HOME/.bashrc (activate with of2306 if running from terminal):
 alias of2306='module unload PrgEnv-cray; module load PrgEnv-gnu; export OPENFOAM_DIR=$HOME/OpenFOAM/OpenFOAM-v2306; export PATH=$PATH:$OPENFOAM_DIR/bin/; source $OPENFOAM_DIR/etc/bashrc; export PS1="(LOCAL OF:\$WM_PROJECT_VERSION) $PS1"'
 
-# Write and quit .bashrc
+# Leave edit mode, write and quit .bashrc
+<Escape>
 :w <Enter>
 :q! <Enter>
 
@@ -91,7 +92,8 @@ i
 # Adjust isambard.sh for your own username
 OPENFOAM_DIR=/home/ex-aroberts/OpenFOAM/OpenFOAM-v2306
 
-# Write and quit isambard.sh
+# Leave edit mode, write and quit isambard.sh
+<Escape>
 :w <Enter>
 :q! <Enter>
 
