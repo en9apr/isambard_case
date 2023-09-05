@@ -20,7 +20,7 @@ export PBS_O_WORKDIR=$(readlink -f $PBS_O_WORKDIR)
 export OMP_NUM_THREADS=1
 cd $PBS_O_WORKDIR
 
-# Load the environment variables for OpenFOAM v2012 build
+# Load the environment variables for OpenFOAM v2306 build
 export OPENFOAM_DIR=/home/ex-aroberts/OpenFOAM/OpenFOAM-v2306
 export PATH=$PATH:$OPENFOAM_DIR/bin/
 source $OPENFOAM_DIR/etc/bashrc
