@@ -11,7 +11,7 @@
 # Use the arm nodes
 #PBS -q arm
 
-# Load modules for currently recommended OpenFOAM v2012 build
+# Load modules for currently recommended OpenFOAM v2306 build
 module unload PrgEnv-cray
 module load PrgEnv-gnu
 
