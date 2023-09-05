@@ -43,7 +43,7 @@ sed -i 's/-lmpi/-lmpich/g' ./wmake/rules/General/mplibMPICH
 # sources bashrc
 source ./etc/bashrc
 
-# shortcut
+# shortcut test
 foam
 
 # check if installation possible
